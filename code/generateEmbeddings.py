@@ -4,14 +4,13 @@ from pyrdf2vec.samplers import UniformSampler
 from pyrdf2vec.walkers import RandomWalker
 from pyrdf2vec import RDF2VecTransformer
 from pyrdf2vec.embedders import Word2Vec
-import matplotlib.pyplot as plt
-from sklearn.manifold import TSNE
 import rdflib
-from adjustText import adjust_text
 import numpy as np
 import random
 
-data = "mutag"
+data = "bgs" #aifb, mutag, or bgs
+nlp_model = "cbow" # skip-gram or cbow
+
 if data == "aifb":
     label_predicates = ["http://swrc.ontoware.org/ontology-07"]
     kg = KG(location="../data/aifbfixed_complete.n3", file_type="n3", label_predicates=label_predicates)
@@ -22,8 +21,17 @@ elif data == "mutag":
     label_predicates = ["http://dl-learner.org/carcinogenesis#isMutagenic"]
     kg = KG(location="../data/mutag.xml", file_type="xml", label_predicates=label_predicates)
 
-walkers = {RandomWalker(4, 5, UniformSampler())}
-transformer = RDF2VecTransformer(Word2Vec(), walkers=walkers)
+walkers = {RandomWalker(8, 10, UniformSampler())} # walks of length 8, 10 walks per entity
+
+# sg: skipgram vs CBOW. 1 for skip-gram
+if nlp_model=="skip-gram":
+    sg = 1
+else:
+    sg = 0
+
+#transformer = RDF2VecTransformer(Word2Vec(vector_size=100, window=5, sg=sg, negative=25), walkers=walkers)
+transformer = RDF2VecTransformer(Word2Vec(window=5, sg=sg, negative=25), walkers=walkers)
+
 
 def get_entities(data):
     g = rdflib.Graph()
@@ -74,4 +82,4 @@ np.random.shuffle(random_states)
 for iter in range(len(random_states)):
     random.seed(random_states[iter])
     embeddings = transformer.fit_transform(kg, entities)
-    np.save("embeddings/" + data + "/embedding" + str(iter), embeddings)
+    np.save("embeddings/" + data + "/" + nlp_model + "/embedding" + str(iter), embeddings)
