@@ -8,12 +8,13 @@ import rdflib
 import numpy as np
 import random
 
-data = "bgs" #aifb, mutag, or bgs
+data = "aifb" #aifb, mutag, or bgs
 nlp_model = "cbow" # skip-gram or cbow
 
 if data == "aifb":
-    label_predicates = ["http://swrc.ontoware.org/ontology-07"]
-    kg = KG(location="../data/aifbfixed_complete.n3", file_type="n3", label_predicates=label_predicates)
+    #label_predicates = ["http://swrc.ontoware.org/ontology-07"]
+    #kg = KG(location="../data/aifbfixed_complete.n3", file_type="n3", label_predicates=label_predicates)
+    kg = KG(location="../data/aifbfixed_complete.n3", file_type="n3")
 elif data == "bgs":
     label_predicates = ["http://data.bgs.ac.uk/ref/Lexicon"]
     kg = KG(location="../data/bgs.nt", file_type="nt", label_predicates=label_predicates)

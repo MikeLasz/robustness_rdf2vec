@@ -3,15 +3,15 @@ from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 
 # get the embeddings
-data = "mutag" # aifb, mutag, or bgs
-nlp_model = "skip-gram" # skip-gram or cbow
+data = "aifb" # aifb, mutag, or bgs
+nlp_model = "cbow" # skip-gram or cbow
 num_embeddings = 10
 embeddings = []
 for iter in range(num_embeddings):
     embeddings.append(np.load("embeddings/" + data + "/" + nlp_model + "/embedding" + str(iter) + ".npy"))
 
 # apply dimension reduction
-dim_red = "tsne2d" # "pca2d", "pca3d", "tsne2d", "tsne3d"
+dim_red = "pca2d" # "pca2d", "pca3d", "tsne2d", "tsne3d"
 reduced_embeddings = []
 
 import progressbar

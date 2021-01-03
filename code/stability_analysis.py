@@ -2,12 +2,12 @@ import numpy as np
 from jaccard_similarity import jaccard_emb, jaccard_of_sets
 import matplotlib.pyplot as plt
 
-data = "mutag" # aifb, mutag, or bgs
+data = "aifb" # aifb, mutag, or bgs
 nlp_model = "cbow" # skip-gram or cbow
 num_embeddings = 10
 embeddings = []
 
-dim_red = "tsne3d" # empty string "", "pca2d", "pca3d", "tsne2d", or "tsne3d"
+dim_red = "pca2d" # empty string "", "pca2d", "pca3d", "tsne2d", or "tsne3d"
 
 # read embeddings:
 if dim_red=="":
