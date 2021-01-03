@@ -36,8 +36,6 @@ def jaccard_emb(ls_embeddings, pairwise=True):
                     sets.append(set(nb[i][ent]))
                     jaccard[iter] = jaccard_of_sets(sets)
                     iter += 1
-            print(ent)
-            print(jaccard)
             pw_jaccard[ent] = np.mean(jaccard)
         return(pw_jaccard)
     else:
@@ -51,37 +49,39 @@ def jaccard_emb(ls_embeddings, pairwise=True):
 
 
 # testing the implementation
-emb_1 = np.array([[0, 0, 0],
-                  [0, 0, 0],
-                  [0, 1, 0],
-                  [0, 0, 1],
-                  [0, 0, 0.5]])
-print("nb of emb_1:")
-print(neighborhoods(emb_1, neighborhood_size=3))
+testing = False # if you want to run some tests, set it to True
+if testing:
+    emb_1 = np.array([[0, 0, 0],
+                      [0, 0, 0],
+                      [0, 1, 0],
+                      [0, 0, 1],
+                      [0, 0, 0.5]])
+    print("nb of emb_1:")
+    print(neighborhoods(emb_1, neighborhood_size=3))
 
 
-emb_2 = np.array([[1, 0, 1],
-                  [1, 0, 1],
-                  [1, 0.5, 1],
-                  [1, 0, 0.5],
-                  [1, 0, 0.8]])
-print("emb_1 and emb_2 are supposed to have the same neighborhoods and hence the same Jaccard distance")
-print("nb of emb_2:")
-print(neighborhoods(emb_2, neighborhood_size=3))
+    emb_2 = np.array([[1, 0, 1],
+                      [1, 0, 1],
+                      [1, 0.5, 1],
+                      [1, 0, 0.5],
+                      [1, 0, 0.8]])
+    print("emb_1 and emb_2 are supposed to have the same neighborhoods and hence the same Jaccard distance")
+    print("nb of emb_2:")
+    print(neighborhoods(emb_2, neighborhood_size=3))
 
-print("jaccard distance:")
-print(jaccard_emb([emb_1, emb_2], pairwise=True))
-emb_3 = np.array([[0, 0, 0.1],
-                  [0, 0, 1],
-                  [1, 0, 0],
-                  [1, 0, 0],
-                  [0, 0, 1]])
-print("nb of emb_3:")
-print(neighborhoods(emb_3, neighborhood_size=3))
-print("jaccard distances emb_1, emb_2, emb_3:")
-print("pairwise:")
-print(jaccard_emb([emb_1, emb_2, emb_3]))
-print("non-pairwise:")
-print(jaccard_emb([emb_1, emb_2, emb_3], pairwise=False))
+    print("jaccard distance:")
+    print(jaccard_emb([emb_1, emb_2], pairwise=True))
+    emb_3 = np.array([[0, 0, 0.1],
+                      [0, 0, 1],
+                      [1, 0, 0],
+                      [1, 0, 0],
+                      [0, 0, 1]])
+    print("nb of emb_3:")
+    print(neighborhoods(emb_3, neighborhood_size=3))
+    print("jaccard distances emb_1, emb_2, emb_3:")
+    print("pairwise:")
+    print(jaccard_emb([emb_1, emb_2, emb_3]))
+    print("non-pairwise:")
+    print(jaccard_emb([emb_1, emb_2, emb_3], pairwise=False))
 
 
