@@ -3,30 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/dim_reduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/dim_reduction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding0.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding0.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding1.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding1.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding2.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding2.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding3.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding3.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding4.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding4.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding5.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding5.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding6.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding6.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding7.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding7.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding8.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding8.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding9.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/embedding9.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding0.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding0.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding1.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding1.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding2.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding2.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding3.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding3.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding4.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding4.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding5.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding5.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding6.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding6.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding7.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding7.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding8.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding8.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding9.npy" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/embedding9.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/hist_jaccard.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/cbow/pca2d/hist_jaccard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/generateEmbeddings.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/generateEmbeddings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/stability_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/stability_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/prediction_class-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/prediction_class-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/prediction_class.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/prediction_class.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,11 +141,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.stability_analysis" />
+      <item itemvalue="Python.dim_reduction" />
+      <item itemvalue="Python.generate_emb" />
       <item itemvalue="Python.jaccard" />
       <item itemvalue="Python.print_results" />
-      <item itemvalue="Python.generate_emb" />
-      <item itemvalue="Python.dim_reduction" />
+      <item itemvalue="Python.stability_analysis" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
