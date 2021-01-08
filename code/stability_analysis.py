@@ -19,7 +19,6 @@ else:
 
 # compute the score:
 num_entities = len(embeddings[0])
-data_for_histo = []#np.zeros(num_embeddings * num_entities)
 
 print("Results " + data)
 # for non-pairwise jaccard distance. Evolution over number of embeddings.
