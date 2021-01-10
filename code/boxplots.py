@@ -4,7 +4,7 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = "bgs" # aifb, mutag, or bgs
+data = "aifb" # aifb, mutag, or bgs
 num_embeddings = 10
 embeddings = []
 len_emb = len(np.load("embeddings/" + data + "/cbow/pca2d/embedding1.npy"))
@@ -22,7 +22,6 @@ for nlp_model in ("cbow", "skip-gram"):
         if i==0:
             results = pd.DataFrame({"distance":dist, "method":np.repeat(nlp_model, len_emb), "dim_red": np.repeat(dim_red, len_emb)}, columns=("distance", "method", "dim_red") )#np.array([dist, np.repeat(nlp_model + dim_red, len_emb)])
         else:
-            print("yes")
             results = results.append(pd.DataFrame({"distance":dist, "method":np.repeat(nlp_model, len_emb), "dim_red": np.repeat(dim_red, len_emb)}, columns=("distance", "method", "dim_red") ))
         i += 1
 
@@ -31,7 +30,11 @@ print(results)
 # generate boxplot
 fig, ax = plt.subplots()
 sns.set_theme(style="whitegrid")
-ax = sns.boxplot(x="dim_red", y="distance", hue="method", data=results)
-ax.set_title("Jaccard Similarities: " + data)
-fig.savefig("embeddings/" + data + "/boxplot_jaccard.png")
+color = sns.color_palette("tab10")
+ax = sns.boxplot(x="dim_red", y="distance", hue="method", data=results, palette="tab10")
+#ax.set_title("Pairwise similarities: " + data, fonzsize=30)
+ax.set_xlabel("Dimension Reduction", fontsize=20)
+ax.set_ylabel("Pairwise Jaccard distance", fontsize=20)
+fig.suptitle("Pairwise similarities: " + data, fontsize=30)
+fig.savefig("embeddings/" + data + "/boxplot_jaccard.pdf")
 plt.show()

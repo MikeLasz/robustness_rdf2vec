@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/prediction_class-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/prediction_class-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/prediction_class.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/prediction_class.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/plots_poster-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/plots_poster-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/boxplots.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/boxplots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_jaccard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/embeddings/bgs/boxplot_jaccard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/embeddings/mutag/boxplot_jaccard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/plots/example_embedding1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots/example_embedding1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/plots/example_embedding2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots/example_embedding2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/plots/example_embedding3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots/example_embedding3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/plots_poster.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots_poster.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
