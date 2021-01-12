@@ -1,0 +1,164 @@
+%%%% Better Poster latex template example v1.0 (2019/04/04)
+%%%% GNU General Public License v3.0
+%%%% Rafael Bailo
+%%%% https://github.com/rafaelbailo/betterposter-latex-template
+%%%% 
+%%%% Original design from Mike Morrison
+%%%% https://twitter.com/mikemorrison
+
+\documentclass[a0paper,fleqn]{betterposter}
+
+%%%% Uncomment the following commands to customise the format
+
+%% Setting the width of columns
+% Left column
+%\setlength{\leftbarwidth}{0.25\paperwidth}
+% Right column
+%\setlength{\rightbarwidth}{0.25\paperwidth}
+
+%% Setting the column margins
+% Horizontal margin
+%\setlength{\columnmarginvertical}{0.05\paperheight}
+% Vertical margin
+%\setlength{\columnmarginhorizontal}{0.05\paperheight}
+% Horizontal margin for the main column
+%\setlength{\maincolumnmarginvertical}{0.15\paperheight}
+% Vertical margin for the main column
+%\setlength{\maincolumnmarginhorizontal}{0.15\paperheight}
+
+%% Changing font sizes
+% Text font
+%\renewcommand{\fontsizestandard}{\fontsize{28}{35} \selectfont}
+% Main column font
+%\renewcommand{\fontsizemain}{\fontsize{28}{35} \selectfont}
+% Title font
+%\renewcommand{\fontsizetitle}{\fontsize{28}{35} \selectfont}
+% Author font
+%\renewcommand{\fontsizeauthor}{\fontsize{28}{35} \selectfont}
+% Section font
+%\renewcommand{\fontsizesection}{\fontsize{28}{35} \selectfont}
+
+%% Changing font sizes for a specific text segment
+% Place the text inside brackets:
+% {\fontsize{28}{35} \selectfont Your text goes here}
+
+%% Changing colours
+% Background of side columns
+%\renewcommand{\columnbackgroundcolor}{black}
+% Font of side columns
+%\renewcommand{\columnfontcolor}{gray}
+% Background of main column
+%\renewcommand{\maincolumnbackgroundcolor}{empirical}
+%\renewcommand{\maincolumnbackgroundcolor}{theory}
+%\renewcommand{\maincolumnbackgroundcolor}{methods}
+%\renewcommand{\maincolumnbackgroundcolor}{intervention}
+% Font of main column
+%\renewcommand{\maincolumnfontcolor}{gray}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\begin{document}	
+\betterposter{
+%%%%%%%% MAIN COLUMN
+
+\maincolumn{
+%%%% Main space
+Randomness in \textbf{RDF2Vec} leads to \textbf{ambiguous} word embeddings. The method \textbf{fails} to produce \textbf{robust embeddings}. 
+}{
+%%%% Bottom space
+\noindent\fcolorbox{white}{white}{%
+\begin{minipage}{\textwidth}
+\begin{center}
+    \includegraphics[width=\textwidth]{img_poster/experimental_setup.pdf}
+\end{center}
+\end{minipage}
+}
+    \\
+%% QR code
+\qrcode{img_poster/qrcode}{img/smartphoneWhite}{
+\textbf{Take a picture} to
+\\get to the \textbf{github} \\repository
+}
+% Smartphone icon
+% Author: Freepik
+% Retrieved from: https://www.flaticon.com/free-icon/smartphone_65680
+
+%% Compact QR code (comment the previous command and uncomment this one to switch)
+%\compactqrcode{img/qrcode}{
+%\textbf{Take a picture} to
+%\\download the full paper
+%}
+
+}
+
+}{
+%%%%%%%% LEFT COLUMN
+
+\title{Robustness of RDF2Vec}
+\author{Mike Laszkiewicz}
+\institution{Faculty of Mathematics, Ruhr-University Bochum}
+\vspace{-2cm}
+\section{Motivation} 
+\vspace{-2cm}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item RDF2Vec aims to produce useful \textbf{word embeddings} for entities in a RDF graph.
+    \item This technique builds on \textbf{random walks}.
+    \item Are the embeddings \textbf{robust} on the choice of walks? 
+\end{itemize}
+%\section{A Diagram}
+%Here is a diagram:
+%\begin{center}
+% Linear regression
+% Author: Henri Menke
+% Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
+%\includegraphics[width=\textwidth]{img_poster/tikzexample1}
+%\end{center}
+
+\section{Experimental Setup}
+How to investigate the robustness?
+\begin{enumerate}
+    \item \textbf{Jaccard distance} of the \textbf{neighborhoods}:
+    \begin{equation*}
+        J(N_1, N_2):= \frac{N_1 \cap N_2}{N_1 \cup N_2} \in [0, 1].
+    \end{equation*}
+    \item \textbf{Predictive power} of the embeddings:
+        \\ 
+        20-Nearest-Neighborhood \textbf{classification} of the entities type.
+\end{enumerate}
+
+\section{Results}
+\vspace{-2cm}
+\begin{center}
+% Linear regression
+% Author: Henri Menke
+% Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
+\includegraphics[width=\textwidth]{img_poster/boxplot_jaccard.pdf}
+\end{center}
+
+\section{Future Extensions:} \vspace{-2cm}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Increase the number of random walks per entity;
+    \item \textbf{weighted random walks};
+    \item Other \textbf{measures of similarity}.
+\end{itemize}
+
+%% This fills the space between the content and the logo
+\vfill
+
+%% Institution logo
+\includegraphics[width=\textwidth]{img_poster/rublogo.jpg}\\
+
+}{
+%%%%%%%% RIGHT COLUMN
+\textbf{RDF2Vec} in a nut shell:
+\begin{center}
+% Picture of ducklings
+% Author: Magda Ehlers, https://www.pexels.com/@magda-ehlers-pexels
+% Retrieved from: https://www.pexels.com/photo/selective-focus-photo-of-flock-of-ducklings-perching-on-gray-concrete-pavement-1300355/
+\includegraphics[width=\textwidth]{img_poster/rdf2vec_nutshell.pdf}
+\end{center}
+
+\textbf{Pipeline:}
+}
+\end{document}

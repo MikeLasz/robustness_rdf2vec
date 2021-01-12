@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/plots_poster-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/plots_poster-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/boxplots-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/boxplots-checkpoint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/boxplots.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/boxplots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_jaccard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/bgs/boxplot_jaccard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/mutag/boxplot_jaccard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/plots/example_embedding1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots/example_embedding1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/plots/example_embedding2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots/example_embedding2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/plots/example_embedding3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots/example_embedding3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/plots_poster.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/plots_poster.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_jaccard.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_jaccard.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/prediction_class.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/prediction_class.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +34,10 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/boxplots.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/pred_class_bp.py" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="Python.generate_boxplots">
+  <component name="RunManager" selected="Python.generate_emb">
     <configuration name="cosine_similarity" type="PythonConfigurationType" factoryName="Python">
       <module name="robustness_rdf2vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
