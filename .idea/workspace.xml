@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/boxplots-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/boxplots-checkpoint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/boxplots.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/boxplots.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_jaccard.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_jaccard.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/prediction_class.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/prediction_class.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_prediction.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_prediction.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overleaf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/code/pred_class_bp.py" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="Python.generate_emb">
+  <component name="RunManager" selected="Python.generate_boxplots">
     <configuration name="cosine_similarity" type="PythonConfigurationType" factoryName="Python">
       <module name="robustness_rdf2vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
