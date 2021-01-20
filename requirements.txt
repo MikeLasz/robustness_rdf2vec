@@ -1,0 +1,9 @@
+seaborn
+numpy
+pandas
+matplotlib
+argparse
+rdflib
+pyRDF2vec
+scikit-learn
+progressbar
