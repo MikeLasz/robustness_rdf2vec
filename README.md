@@ -98,9 +98,54 @@ Increasing the dimensionality of the embedding clearly increases the expressive 
 -rdflib 
 -RDF2Vec 
 ## 4.2. Data
-
+Due to computational limitations, I investigated the following 
+small sized data sets:
+1. **AIFB:** Describes an research institute (*AIFB*) including its
+staff, research groups, publications, and so on.
+   
+2. **MUTAG:** Biological dataset that cotains information about 
+molecules that are potentially carcinogenic 
+   
+3. **BGS:** (*British Geological Survey*) Contains geological
+measurements in Great Britain. 
+   
 ## 4.3. Installing
+To install the required software simply run :
 
+`pip install -r requirements.txt` 
 ## 4.4. How the git is organized
+The different programms are designed to be run in the following order:
+0. `cd code` to switch to the code directory.
+1. `python generateEmbeddings.py` to generate the embeddings. 
+   The user can choose between various parameters, see 
+   `python generateEmbeddings.py -h`. 
+2. `python dim_reduction.py` to apply a dimension reduction on the 
+embeddings from step 1. The user can choose between various parameters, see 
+   `python dim_reduction.py -h`. To run the script for all possible 
+   configurations run `python run_dimred.py`. 
+3. `python stability_analysis.py` to run the stability analysis 
+according to Section 2.1 (*The Neighborhood-Similarity*). The user can choose between various parameters, see 
+   `python stability_analysis.py -h`. To run the script for all possible 
+   configurations run `python run_stab_ana.py`.
+   
+4. `python results.py` to summarize the results in a table. In 
+addition you can generate corresponding boxplots that depict 
+   the characteristic of the empirical distribution of the pairwise 
+   Jaccard distances J(N^{e_j}_{i}, N^{e_j}_{k}): `python boxplots.py`
+
+5. The results that correspond to the *Predicitve-Similarity* 
+from Section 2.2. can be accessed via the notebook (for instance 
+   using jupyter lab): `jupyter lab prediction_class.ipynb`.
+# 5. Result
+In the following, we see the summarized results in the form 
+of two boxplots that measure the empirical robustness of RDF2Vec
+in terms of *Neighborhood-Similarity* and *Predictive-Similarity*, 
+respectively. The result for the *AIFB* data set are by far the best.
+To access the other results, see `scores/mutag/plots/` and 
+`scores/bgs/plots/`.
+![alt text](code/scores/aifb/plots/comparison_boxplot-1.png "RDF2Vec in a Nutshell")
+![alt text](code/scores/aifb/plots/prediction_boxplot-1.png "RDF2Vec in a Nutshell")
+
+# 6. Conclusion
 
 
