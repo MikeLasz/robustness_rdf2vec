@@ -1,5 +1,4 @@
 # Investigating the Robustness of RDF2Vec
-A seminar work at Ruhr-University Bochum (Seminar on Knowledge Graphs, 2020).
 ![alt text](poster/plots/exp_setup-1.png "Experimental Setup")
 
 In times of the *semantic web* there is much data available in the
