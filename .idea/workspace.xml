@@ -7,59 +7,8 @@
     <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/embeddings/aifb/boxplot_prediction.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_cbowpca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_cbowpca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_cbowtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_cbowtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_skip-grampca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_skip-grampca2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_skip-grampca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_skip-gramtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/boxplot_skip-gramtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_cbowpca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_cbowpca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_cbowtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_cbowtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_skip-grampca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_skip-grampca2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_skip-grampca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_skip-gramtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/aifb/plots/hist_skip-gramtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_cbowpca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_cbowpca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_cbowtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_cbowtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_skip-grampca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_skip-grampca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_skip-gramtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/boxplot_skip-gramtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_cbowpca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_cbowpca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_cbowtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_cbowtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_skip-grampca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_skip-grampca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_skip-gramtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/bgs/plots/hist_skip-gramtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_cbowpca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_cbowpca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_cbowtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_cbowtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_skip-grampca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_skip-grampca2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_skip-grampca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_skip-gramtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/boxplot_skip-gramtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_cbowpca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_cbowpca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_cbowtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_cbowtsne3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_skip-grampca2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_skip-grampca2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_skip-grampca3d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_skip-gramtsne2d.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/scores/mutag/plots/hist_skip-gramtsne3d.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/prediction_class-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/prediction_class-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/prediction_class.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/prediction_class.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,16 +226,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/generateEmbeddings.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
