@@ -1,5 +1,5 @@
 # Investigating the Robustness of RDF2Vec
-![alt text](poster/plots/exp_setup-1.png "Experimental Setup")
+![alt text](poster/plots/Experimental_Setup-1.png "Experimental Setup")
 
 In times of the *semantic web* there is much data available in the
 form of knowledge graphs. 
