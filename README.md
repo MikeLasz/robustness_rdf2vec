@@ -1,7 +1,7 @@
 # Investigating the Robustness of RDF2Vec
 ![alt text](poster/plots/Experimental_Setup-1.png "Experimental Setup")
 
-In times of the *semantic web* there is much data available in the
+In times of *semantic web* there is much data available in the
 form of knowledge graphs. 
 However, as many machine learning algorithms rely on 
 numeric data, it is required to transform the data from the space 
