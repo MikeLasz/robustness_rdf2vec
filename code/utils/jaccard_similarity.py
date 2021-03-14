@@ -14,13 +14,16 @@ def jaccard_of_sets(sets):
 
 
 
-def jaccard_emb(ls_embeddings, pairwise=True):
+def jaccard_emb(ls_embeddings, pairwise=True, distance="euclidean"):
     num_embeddings = len(ls_embeddings)
     num_entities = len(ls_embeddings[0])
     num_pairs = int(num_embeddings * (num_embeddings - 1) / 2)
     nb = []
     for iter in range(num_embeddings):
-        nb.append(neighborhoods(ls_embeddings[iter], neighborhood_size=3))
+        if distance=="euclidean":
+            nb.append(neighborhoods(ls_embeddings[iter], neighborhood_size=20))
+        elif distance=="cosine":
+            nb.append(cosine_neighborhoods(ls_embeddings[iter], neighborhood_size=20))
     if pairwise:
         pw_jaccard = np.zeros(num_entities)
 

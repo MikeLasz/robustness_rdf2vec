@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/utils/get_neighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/utils/get_neighbors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/utils/jaccard_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/utils/jaccard_similarity.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
