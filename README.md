@@ -191,14 +191,14 @@ Note, that we used 2 variants of RDF2Vec, one that employs word2vec via skip-gra
  
 |Neighborhood-sim. |AIFB (sg) | BGS (sg) | MUTAG (sg) | AIFB (cbow) | BGS (cbow) | MUTAG (cbow) |
 |--------|----------|----------|------------|-------------|------------|--------------|
-|PCA2d   | 0.41     | 0.21     | 0.20       | 0.40        | 0.20       | 0.20         |
-|PCA3d   | 0.43     | 0.22     | 0.21       | 0.41        | 0.21       | 0.20         |
-|tSNE2d | 0.56     | 0.30     | 0.26       | 0.52        | 0.25       | 0.22         |
-|tSNE3d | 0.56     | 0.30     | 0.27       | 0.53        | 0.25       | 0.23         |
+|PCA2d   | 0.14     | 0.06     | 0.04       | 0.09        | 0.06       | 0.03         |
+|PCA3d   | 0.23     | 0.10     | 0.06       | 0.14        | 0.07       | 0.05         |
+|tSNE2d | 0.40     | 0.26    | 0.19       | 0.35        | 0.16       | 0.11         |
+|tSNE3d | 0.41     | 0.27     | 0.19       | 0.36        | 0.17       | 0.11         |
 
 We observe that RDF2Vec is most stable when applied onto AIFB using t-SNE.
 Nonetheless, the robustness is still a bit disappointing since, in average, the 
-neighborhoods are only 56% similar to each other. For the other 2 data sets, the
+neighborhoods are only 41% similar to each other. For the other 2 data sets, the
 robustness is much worse.
 
 The following boxplot depicts the empirical distribution of similarities between 
