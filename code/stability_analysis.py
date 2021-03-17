@@ -22,7 +22,6 @@ if __name__ == "__main__":
     dim_red = args.dim_red
     if dim_red == "no":
         dim_red = ""
-        print("no dimension reduction")
 
     criterion = args.criterion
 

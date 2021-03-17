@@ -2,7 +2,7 @@ import subprocess as s
 
 test = True
 if test:
-    s.run(["python", "stability_analysis.py", "--data", "aifb", "--criterion", "sec_order_cosine", "--dim_red", "no" ])
+    s.run(["python", "stability_analysis.py", "--data", "aifb", "--criterion", "cosine-knn", "--dim_red", "no" ])
 else:
     for data in ("aifb", "bgs", "mutag"):
         for nlp_model in ("cbow", "skip-gram"):
