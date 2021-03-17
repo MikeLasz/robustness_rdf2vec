@@ -15,6 +15,7 @@ from sklearn import neighbors
 parser = argparse.ArgumentParser()
 parser.add_argument("--data", type=str, default="aifb", help="Select the data: aifb, mutag, bgs")
 parser.add_argument("--num_embeddings", type=str, default=10, help="Number of embeddings that should be generated")
+parser.add_argument("--criterion", type=str, default="euclidean-knn", help="Select the stability criterion: euclidean-knn, cosine-knn, aligned_cosine, or sec_order_cosine")
 args = parser.parse_args()
 
 # preprocessing for the prediction task
@@ -152,6 +153,7 @@ if __name__ == "__main__":
     ###########################################################
     data = args.data
     num_embeddings = args.num_embeddings
+    criterion = args.criterion
     embeddings = []
     len_emb = len(np.load("embeddings/" + data + "/cbow/pca2d/embedding1.npy"))
 
@@ -163,7 +165,15 @@ if __name__ == "__main__":
             for iter in range(num_embeddings):
                 embeddings.append(np.load("embeddings/" + data + "/" + nlp_model + "/" + dim_red + "/embedding" + str(iter) + ".npy"))
 
-            dist = jaccard_emb(embeddings, pairwise=True)
+            if criterion == "euclidean-knn":
+                dist = jaccard_emb(embeddings, pairwise=True)
+            elif criterion == "cosine-knn":
+                dist = jaccard_emb(embeddings, pairwise=True, distance="cosine")
+            elif criterion == "sec_order_cosine":
+                _, dist = sec_cosine_similarity(embeddings)
+            elif criterion == "aligned_cosine":
+                _, dist = aligned_cosine_similarity(embeddings)
+            #dist = jaccard_emb(embeddings, pairwise=True)
             if i==0:
                 results = pd.DataFrame({"distance":dist, "method":np.repeat(nlp_model, len_emb), "dim_red": np.repeat(dim_red, len_emb)}, columns=("distance", "method", "dim_red") )
             else:
@@ -172,7 +182,7 @@ if __name__ == "__main__":
 
 
     # generate boxplot
-    PATH = "scores/" + data + "/plots/"
+    PATH = "scores/" + criterion + "/" + data + "/plots/"
     fig, ax = plt.subplots()
     color = sns.color_palette("tab10")
     ax = sns.boxplot(x="dim_red", y="distance", hue="method", data=results, palette="tab10")
