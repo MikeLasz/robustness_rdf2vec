@@ -203,13 +203,13 @@ robustness is much worse.
 
 The following boxplot depicts the empirical distribution of similarities between 
 neighborhoods.
-![alt text](code/scores/aifb/plots/comparison_boxplot-1.png "Neighborhood-Similarity")
+![alt text](code/scores/euclidean-knn/aifb/plots/comparison_boxplot-1.png "Neighborhood-Similarity")
 
 
 
 Finally, we plot a boxplot that depicts the *Predictive-Similarity* of each entity
 across the embeddings:
-![alt text](code/scores/aifb/plots/prediction_boxplot-1.png "RDF2Vec in a Nutshell")
+![alt text](code/scores/euclidean-knn/aifb/plots/prediction_boxplot-1.png "RDF2Vec in a Nutshell")
 
 Importantly, note that I trimmed down the data such that we end up with a classification 
 problem with only 3 classes. This is due to underrepresentation of various classes.
