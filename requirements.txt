@@ -7,3 +7,4 @@ rdflib
 pyRDF2vec
 scikit-learn
 progressbar
+tqdm

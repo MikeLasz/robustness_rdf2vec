@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,8 +240,8 @@
       <item itemvalue="Python.generate_emb" />
       <item itemvalue="Python.jaccard" />
       <item itemvalue="Python.print_results" />
-      <item itemvalue="Python.stability_analysis" />
       <item itemvalue="Python.run_all_stabana" />
+      <item itemvalue="Python.stability_analysis" />
       <item itemvalue="Python.test_alignedcosine" />
     </list>
   </component>

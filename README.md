@@ -158,7 +158,7 @@ In the empirical analysis I employed the same hyper parameters as  [[2]](#2).
 ## 4.3. Installing
 To install the required software simply run :
 
-`pip install -r requirements.txt` 
+`pip3 install -r requirements.txt` 
 ## 4.4. How the git is organized
 The different programs are designed to be run in the following order:
 0. `cd code` to switch to the code directory.
