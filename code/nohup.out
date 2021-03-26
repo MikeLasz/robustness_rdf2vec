@@ -1,0 +1,6 @@
+/usr/local/lib/python3.8/dist-packages/seaborn/_decorators.py:36: FutureWarning: Pass the following variable as a keyword arg: x. From version 0.12, the only valid positional argument will be `data`, and passing other arguments without an explicit keyword will result in an error or misinterpretation.
+  warnings.warn(
+Results aifb:
+mean = 0.4
+var = 0.01
+Figures are saved in scores/cosine-knn/aifb/plots
