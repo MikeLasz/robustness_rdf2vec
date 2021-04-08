@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="" />
+    <list default="true" id="f03bae6e-e7fe-4ac6-844f-ca6ef734c9b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/code/run_stab_ana.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/run_stab_ana.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
