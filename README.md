@@ -15,8 +15,8 @@ One popular embedding technique is called *RDF2Vec* [[2]](#2), which transforms
 a RDF graph based on random traversions on the graph. One specific 
 form of RDF2Vec collects random walks on the graph. These randomly generated 
 sequences are interpreted as sentences, which can be used to create embeddings 
-in the fashion of word2vec [[3]](#3) [[4]](#4). 
-Hence, the RDF2Vec algorithm can be summarized as follows:
+in the fashion of word2vec [[3]](#3) [[4]](#4). The following figure visualizes 
+the RDF2Vec algorithm:
 
 ![alt text](poster/plots/rdf2vec_nutshell-1.png "RDF2Vec in a nut shell")
 
